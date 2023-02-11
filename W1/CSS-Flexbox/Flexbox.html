@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: column; */
+            align-items: center;
+            /* align-items: stretch/flex-start/flex-end/center */
+            justify-content: center; 
+            /* justify-content: start/center/space-between/space-around/space-evenly */
+            border: 2px solid yellow;
+        }
+
+        .box{
+            width: 250px;
+            height: 150px;
+            border: 1px solid red;
+        }
+
+        #one{
+            order: 3;
+            /* flex: 2 1 300px; */
+        }
+
+        #two{
+            order: 2;
+            /* flex: 1 2 300px; */
+        }
+
+        #three{
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="one">Box 1</div>
+        <div class="box" id="two">Box 2</div>
+        <div class="box" id="three">Box 3</div>
+    </div>
+    
+</body>
+</html>
